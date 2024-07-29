@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên sách" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Giá Thuê"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_loai_sach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:drawableLeft="@drawable/ic_save"
+                    android:drawableTint="@color/white"
+                    android:text="Lưu" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F44336"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:drawableTint="@color/white"
+                    android:text="Hủy" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

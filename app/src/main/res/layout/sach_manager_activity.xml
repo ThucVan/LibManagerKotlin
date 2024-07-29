@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imv_back"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_back" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tên sách" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Giá Thuê"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nxb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhà Xuất Bản" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_tac_gia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tác Giả" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nam_xb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Năm Xuất Bn"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imv_sach"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_so_luong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số Lượng"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_loai_sach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:drawableLeft="@drawable/ic_save"
+                    android:drawableTint="@color/white"
+                    android:text="Lưu" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F44336"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:drawableTint="@color/white"
+                    android:text="Hủy" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

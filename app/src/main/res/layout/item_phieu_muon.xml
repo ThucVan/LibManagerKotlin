@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TenTV"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TenTV"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name_sach"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="TenSach"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_sl"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="so luong" />
+
+                    <TextView
+                        android:id="@+id/tv_status_sach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tra Sach" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tien thue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ngay_muon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ngay muon"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ngay_tra"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ngay tra"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imv_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ic_edit" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imv_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ic_delete" />
+
+            <Button
+                android:id="@+id/btn_send_email"
+                android:text="Gửi mail"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

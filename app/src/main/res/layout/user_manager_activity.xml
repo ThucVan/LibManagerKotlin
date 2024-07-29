@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imv_back"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_back" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên Đăng Nhập" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật Khẩu" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Họ Tên" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Giới Tính" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd_nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/rd_nu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Nữ" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Sdt" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_dia_chi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2196F3"
+                android:drawableLeft="@drawable/ic_save"
+                android:drawableTint="@color/white"
+                android:text="Lưu" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F44336"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawableTint="@color/white"
+                android:text="Hủy" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

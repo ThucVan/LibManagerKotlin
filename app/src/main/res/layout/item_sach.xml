@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imv_sach"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_delete" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/imv_edit"
+                android:layout_toEndOf="@id/imv_sach"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_name"
+                        style="@style/TextAppearance.Material3.LabelLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="@string/app_name"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_sl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="@string/app_name"
+                        android:textAlignment="center" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_tac_gia"
+                        style="@style/TextAppearance.Material3.LabelLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_nam_xb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="@string/app_name"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_nxb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:text="@string/app_name"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imv_delete"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_delete" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imv_edit"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/imv_delete"
+                android:padding="10dp"
+                android:src="@drawable/ic_edit" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
